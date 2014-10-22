@@ -13,7 +13,7 @@ module.exports = function(grunt) {
 	var sauce = require('sauce-connect-launcher');
   var async = require('async');
 
-	grunt.registerTask('sauceconnect', 'Grunt task for sauce-connect utility', function(){
+	grunt.registerMultiTask('sauceconnect', 'Grunt task for sauce-connect utility', function(){
 		var done = this.async();
 		var options = this.options({
 			username: false,

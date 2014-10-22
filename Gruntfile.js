@@ -6,7 +6,8 @@ module.exports = function(grunt) {
         accessKey: process.env.SAUCE_ACCESS_KEY,
 				port: 80,
 				keepAlive: true
-			}
+			},
+			default: {}
 		},
 		jshint: {
 			all: [
